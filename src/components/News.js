@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const News = ({ news }) => {
 	//extraer los datos
@@ -8,7 +9,7 @@ const News = ({ news }) => {
 	const image = urlToImage ? (
 		<div className="card-image">
 			<img src={urlToImage} alt={title} />
-			<span className="card-title">{source.name}</span>
+			<span className="card-title">{source.name.toLowerCase()}</span>
 		</div>
 	) : null;
 
@@ -28,6 +29,10 @@ const News = ({ news }) => {
 			</div>
 		</div>
 	);
+};
+
+News.propTypes = {
+	news: PropTypes.object.isRequired,
 };
 
 export default News;

@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import Header from './components/Header';
+import Form from './components/Form';
 import ListNews from './components/ListNews';
 
 class App extends Component {
@@ -11,8 +12,8 @@ class App extends Component {
 		this.getNews();
 	}
 
-	getNews = async () => {
-		const url = `https://newsapi.org/v2/top-headlines?country=ve&category=business&apiKey=4f706b7dcd8b49fea356786d66d007df`;
+	getNews = async (category = 'general') => {
+		const url = `https://newsapi.org/v2/top-headlines?country=ve&category=${category}&apiKey=4f706b7dcd8b49fea356786d66d007df`;
 
 		const response = await fetch(url);
 		const news = await response.json();
@@ -25,6 +26,7 @@ class App extends Component {
 			<Fragment>
 				<Header title="Latest News" />
 				<div className="container white container-news">
+					<Form getNews={this.getNews} />
 					<ListNews news={this.state.news} />
 				</div>
 			</Fragment>
