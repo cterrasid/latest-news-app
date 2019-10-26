@@ -29,16 +29,6 @@ _These instructions will allow you to obtain a copy of the project on your local
 4. To launch the project and see it in the browser, run `$ npm start`.
 
 
-## Built with 🛠️
-
-### Dependencies
-
-- [bootswatch 4.3.1](https://www.npmjs.com/package/bootswatch)
-- [uuid 3.3.3](https://www.npmjs.com/package/uuid)
-- [react 16.10.2](https://www.npmjs.com/package/react)
-- [react-dom 16.10.2](https://www.npmjs.com/package/react-dom)
-- [react-scripts 3.2.0](https://www.npmjs.com/package/react-scripts)
-
 ## License 📄
 
 This project is under the MIT License - see the file [LICENSE.md](LICENSE.md) for details
