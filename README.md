@@ -1,6 +1,6 @@
 # Latest News
 
-_Simple app to search by category (general, bussines, science, health, technology and entertainment), the latest news of Venezuela. You can see a demo [HERE](https://adoring-euclid-a392c8.netlify.com/)_
+_Simple app to search by category (general, bussines, science, health, technology and entertainment), the latest news of Venezuela. You can see a demo <a href="https://cterrasid.github.io/latest-news-app/" target="blank">HERE</a>__
 
 ## Project Structure 📄
 
